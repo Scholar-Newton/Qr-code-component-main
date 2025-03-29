@@ -1,0 +1,99 @@
+/* Base Styles */
+:root {
+    /* Colors */
+    --white: hsl(0, 0%, 100%);
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+  
+    /* Font */
+    --font-family: 'Outfit', sans-serif;
+    --font-size-paragraph: 15px;
+  
+    /* Spacing */
+    --card-padding: 1.5rem;
+    --border-radius: 15px;
+  
+    /* Shadows */
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-paragraph);
+    background-color: var(--slate-300);
+    color: var(--slate-900);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 1rem;
+  }
+  
+  /* Container for the card */
+  .container {
+    max-width: 375px;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    padding: var(--card-padding);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+  }
+  
+  /* QR Code Image */
+  .qr-image {
+    width: 100%;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+  }
+  
+  /* Headline */
+  h1 {
+    font-weight: 700;
+    font-size: 1.25rem; /* Adjust for responsiveness */
+    color: var(--slate-900);
+    margin-bottom: 1rem;
+  }
+  
+  /* Paragraph */
+  p {
+    font-weight: 400;
+    font-size: var(--font-size-paragraph);
+    color: var(--slate-500);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Attribution Section */
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .attribution a {
+    color: var(--slate-900);
+    text-decoration: none;
+  }
+  
+  .attribution a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .container {
+      max-width: 400px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
